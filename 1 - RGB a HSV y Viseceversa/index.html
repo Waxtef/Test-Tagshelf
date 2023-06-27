@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RGB Color Slider</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container-rgb">
+       <div class="wrapper">
+           R<input type="range" min="0" max="255" value="0" id="red" oninput="rgbToHsv_no_ramas()">
+           <input type="number" min="0" max="255" id="r-value" class="input" oninput="rgbToHsv_no_ramas()">
+       </div>
+       <div class="wrapper">
+            G<input type="range" min="0" max="255" value="0" id="green" oninput="rgbToHsv_no_ramas()">
+            <input type="number" min="0" max="255" id="g-value" class="input" oninput="rgbToHsv_no_ramas()">
+        </div>
+        <div class="wrapper">
+            B<input type="range" min="0" max="255" value="0" id="blue" oninput="rgbToHsv_no_ramas()">
+            <input type="number" min="0" max="255" id="b-value" class="input" oninput="rgbToHsv_no_ramas()">
+        </div>
+        <span id="output">rgb(0, 0, 0)</span>
+        <button onclick="copiar_rgb()">Copiar</button>
+   </div>
+   <div class="container-hvs">
+    <div class="wrapper">
+        H<input type="range" min="0" max="360" value="0" id="hue" oninput="hsvToRgb()">
+        <input type="number" min="0" max="360" id="h-value" class="input" oninput="hsvToRgb()">
+    </div>
+    <div class="wrapper">
+         S<input type="range" min="0" max="100" value="0" id="sat" oninput="hsvToRgb()">
+         <input type="number" min="0" max="100" id="s-value" class="input" oninput="hsvToRgb()">
+     </div>
+ <div class="wrapper">
+         V<input type="range" min="0" max="100" value="0" id="val" oninput="hsvToRgb()">
+         <input type="number" min="0" max="100" id="v-value" class="input" oninput="hsvToRgb()">
+     </div>
+     <span id="output-hsv">hsv(0, 0%, 0%)</span>
+</div>
+    <br>
+    <div class="table-container">
+    <table id="Colores" class="table">
+        <tr>
+            <th>RGB</th>
+            <th>HSV</th>
+        </tr>
+    </table>
+    </div>
+    <br>
+<script src="java.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Matriz Hexadecimal</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inp-wrapper">
+          <div class="date-wrapper">
+            <label for="fila">Numero Fila</label>
+            <input type="number" max="31" min="0" value="0" id="fila" />
+          </div>
+          <div class="date-wrapper">
+            <label for="columna">Numero Columna</label>
+            <input type="number" max="23" min="0" value="0" id="columna" />
+          </div>
+        </div>
+        <button id="submit" onclick="encontrarValor()" >Buscar</button>
+        <div id="output">Valor en la Coordenadas</div>
+      </div>
+      <!-- Script -->
+      <script src="script.js"></script>
+</body>
+</html>

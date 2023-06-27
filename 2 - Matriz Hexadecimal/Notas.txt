@@ -1,0 +1,37 @@
+En Primer lugar para resolver este Ejercicio debia recrear el Patron principal, al ver la data completey moverla a un excel
+para visualizarla mejor me di cuanta que la matriz 16x8 era el patron principal , el patron que debia de crear
+para asi crear los otros patrones y darle continuidad al dataset.(Despues me di cuenta que ese no era el patron inicial sino que era la matriz 32x8)
+ 
+El dataset era un patron hexadecimal convinaciones de numeros del 0-9 y letras de a-f, asi que lo que hice fue en un excel cambiar ese patron
+a numeros reales y decidi que trabajaria para hacer los calculos con numeros reales y al final solo tenia que convertir el resultado a 
+hexadecimal.
+
+Entonces el segundo paso fue Empezar hacer el proceso para crear esta matriz de 16x8,asi que tenia que ir
+reduciendo el problema y note que la matriz 1x8 o mejor dicho la primera fila era el mismo patron que seguia
+todo el dataset solo con sumas y restas de multiplos de 4.asi que debia crear esa primera fila en una matriz si queria
+generar las otras.
+
+Al tratar de recrear la fila llegue al siguiente inconveniente un patron que era incosistente la fila era [1,0,1,2,3,2,3,0], pero 
+si cambia el orden y movia los datos una columna a la derecha el patron era uno mas facil:[0,1,0,1,2,3,2,3], asi que ya tenia por
+donde comenzar. Crear ese patron fue sencillo, despues lo que hice fue ponerlo en una matriz y mover las columnas haciendo que estuvieran 
+organizados como era inicialmente.
+
+Lo siguiente era resolver la ultima columna de la matriz 16x8 ya que la ultima columna se movia hacia arriba cambiando los valores.
+Pude con una funcion hacer la nueva matriz 16x8 con la ulltima columna cambiada, pero no pude crear un bucle para que ella misma cambiara y se agregara
+a la matriz principal ya que cuando lo intentaba la matriz se sobre escribia y solo agregaba la misma matriz.
+
+Despues solo fue hacer mas iteraciones con esa matriz inicial sumando multiplos de 4 que eran la diferencia que tenian las filas del dataset,
+hasta llegar a la fila 16, aqui requeria de otro bucle uno que sumara por 16 la matriz original 16x8.
+
+El principal incoveniente fueron las matrices al parecer las matrices no se pueden copiar de manera normal por que se sobreescribe la que se esta copiando
+asi que tenia que hacer un bucle para copiar una matriz a otra pasando por todos sus datos.
+
+Quizas mi falta de conocimiento o tiempo no me permitio conseguir la solucion aceptable para este problema, solo pude crear una matriz limitada de 32x24
+dentro de estos valores el programa funciona bien, pero no pude para el momento que entrego esto hacerlo que se creara dinamicamente segun la coordenada 
+que se introduciera. Aunque seguire intentando solo para darle solucion por mi cuenta.
+
+Al final del programa solo es introducir que fila y columna queres y el convertira el numero a hexadecimal y lo desplegara.
+
+
+
+

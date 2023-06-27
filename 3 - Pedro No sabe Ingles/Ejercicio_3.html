@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Detectar Idioma</title>
+</head>
+<body>
+    <div class="container">
+        <p class="heading">Voz a Texto</p>
+        <div class="options">
+          <div class="anguage">
+            <p>Idioma</p>
+            <select name="input-language" id="language"></select>
+          </div>
+        </div>
+        <div class="line"></div>
+        <button class="btn record">
+          <p>Comenzar a Escuchar</p>
+        </button>
+        <p class="heading">Texto Resultado :</p>
+        <div class="result" spellcheck="false">
+          <textarea class="interim" id="input-text" rows="15" placeholder="Ingrese su texto aquí"></textarea>
+        </div>
+        <div id="result"></div>
+        <div class="buttons">
+          <button class="btn clear">
+            <p>Borrar</p>
+          </button>
+          <button onclick="detectaridioma()" class="btn detectar">
+            <p>Detectar Idioma</p>
+          </button>
+        </div>
+      </div>
+     
+  <script src="languajes.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

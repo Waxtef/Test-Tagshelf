@@ -1,0 +1,18 @@
+Este ejercicio trataba sobre la Conversion de de colores de RGB a HSV.
+Esto de HSV nunca lo habia escuchado pero en termino de formulas no fue complicado sacar los valores.
+
+la dificultad vino con la premisa del ejercicio : Sin ramas (evaluaciones de condiciones).
+Ya que la formula que habia hecho preliminar mente si llevaba condiones y de ella me fui basando.
+Basicamente hice un algoritmo que si funcionaba con condiciones y poco a poco fue creando el nuevo sin estas.
+
+El programa esta hecho de una manera que puedas convertir colores de manera dinamica ya sea por la barra o el input,
+y estos automaticamente se actualizen en vivo y el color resultante de cada actualizacion se puede ver 
+en el fondo de la pantalla.
+
+Ademas tiene un boton copiar que es solo una funcionalidad para tomar los datos de RGB y HSV que corresponden al mismo
+color, esto lo hice para tener una manera de capturar los datos por si los necesitaba ya sea para almacenarlos o copiarlos, 
+pero solo en forma de prueba , este solo los mueve a una tabla temporal, solo para visualizacion.
+
+En terminos de Hardware para poder utilizar este programa, simplemente algo con un procesador Core 2 con 2 de ram o mas podria moverlo, 
+al ser web, computadores,celulares, tablets podrian utilizarlo. 
+En terminos de la premisa : (Tenga en cuenta las opciones de diseño específicas para su elección de hardware). Esto fue lo que entendi.

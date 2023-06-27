@@ -1,0 +1,18 @@
+Este fue el ultimo ejercicio que que empece hacer , asi que no lo habia leido detenidamente ,ni tampoco las consideraciones
+ya antes de comenzar me dije a mi mismo : "este se ve sencillo con una libreria simplemente introducir ver el texto y listo". 
+
+Pero en las consideraciones decian :"5. Procure no utilizar servicios de terceros para la solución de estos problemas".
+Cuando lei esto entendi que no debia utilizar nada mas que solo mi codigo para saber que idioma debia detectar.
+
+Asi empece ha desglozar en una lista las instrucciones que debi tener en cuenta:
+
+1-Soportar o Detectar Ingles o Espanol.
+2-Se Recibirian oraciones, parafos o textos considerables.
+
+Con estas premisas tuve una idea, utilizar conectores y preposiciones. Relativamente los conectores simples y las preposiciones de una palabra no son muchos,
+ni en ingles y tampoco en Espanol, estos conectores y preposiciones son palabras necesarias para formas oraciones, diria que indispensables, asi que en la mayoria
+de oraciones deben tenerlos.
+
+Lo que primero hice fue array o json con estos conectores y compararlos con mi texto, y ver que palabras eran similares , despues de ver que esto funcionaba,
+tome este mismo algoritmo y lo modifique con dos arreglos de palabras, uno en ingles y otro en Espanol, alrededor de 50 palabras por json. Despues lo que 
+tenia que hacer era utilizar condiones si al comparar el texto con las palabra y asi saber que idioma es el texto en cuestion.
