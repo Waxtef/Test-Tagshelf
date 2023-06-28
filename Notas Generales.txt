@@ -1,0 +1,7 @@
+Los proyectos estan hechos en HTML y Javascript asi que solo debe abrir el html en su navegador o con doble click 
+y el correra automaticamente, no necesita instalar nada.
+
+Utilize estas tencologias ya que son mas diestro con la programacion web y queria aprovechar todo el tiempo que disponia, 
+y que fuera facil de ejecutar el programa.
+
+Cada proyectos tiene un Archivo Notas.txt en el que explico mi proceso y problemas que me encontre al resolver los ejercicios.
